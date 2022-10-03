@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <marquee direction="left">
+                <h1 class="mt-5">This is MEAN</h1>
+            </marquee>
+            <marquee direction="right">
+                <h1>Let's Learn</h1>
+            </marquee>
+            <div class="col-md-12">
+                <table class="table my-5">
+                    <thead>
+                      <tr>
+                        <th scope="col">Roll No.</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Address</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Aditya Kulkarni</td>
+                        <td>kulkarniadi032@gmail.com</td>
+                        <td>Aurangabad, Maharashtra</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Atharva Kulkarni</td>
+                        <td>katharva01@gmail.com</td>
+                        <td>976365482</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Amaan Magharabi</td>
+                        <td>amaanmagharabi@gmail.com</td>
+                        <td>976365482</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-md-6 offset-md-3">
+                <div id="gifImg">
+                    <img src="https://c.tenor.com/2uyENRmiUt0AAAAM/coding.gif" alt="" class="h-100 w-100">
+                </div>
+                <div class="d-flex justify-content-center mt-5">
+                    <button class="btn btn-danger w-25" onclick="handleShowGif()">On</button>
+                    <button class="btn btn-success w-25" onclick="handleHideGif()">Off</button>
+                </div>
+                <div class="text-center my-5">
+                    copyright@diems.org
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+      function handleShowGif(){
+          document.getElementById('gifImg').classList.add('d-block')
+          document.getElementById('gifImg').classList.remove('d-none')
+      }
+      function handleHideGif(){
+        document.getElementById('gifImg').classList.remove('d-block')
+        document.getElementById('gifImg').classList.add('d-none')
+      }
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
